@@ -9,7 +9,7 @@
     <meta name="author" content="AZE">
     <meta name="description" content=" ">
     <meta name="keywords" content=" ">
-    <link rel="icon" href="/images/snow.jpg">
+    <link rel="icon" href="/images/touxiang.png">
     <link rel="stylesheet" href="/css/antd.min.css">
     
     <link rel="stylesheet" href="/css/night-theme.css">
@@ -197,9 +197,9 @@
 
 <div class="post">
 
-    <a href="/2022/12/28/my-first-post/">
+    <a href="/2022/12/28/blog-building-note/">
         <h2>
-            my first post
+            博客搭建笔记
         </h2>
     </a>
 
@@ -219,20 +219,9 @@
     <div class="excerpt">
         <div class="content" v-pre>
             
+            <p> 利用hexo + github page生成个人博客的方法过程，记录在博客搭建过程中遇到的问题和解决方法。一站式保姆级教程～</p>
+<h2 id="1-安装Node-js"><a href="#1-安装Node-js" class="headerlink" title="1.安装Node.js"></a>1.安装Node.js</h2><p>下载地址：nodejs.org<br>下载 18.12.1 LTS 版本<br>安装成功后，终端切换到root用户：<br>sudu su<br>查看node/npm版本：node -v / npm-v</p>
             
-            <h2 id="1-安装Node-js"><a href="#1-安装Node-js" class="headerlink" title="1.安装Node.js"></a>1.安装Node.js</h2><p>下载地址：nodejs.org<br>下载 18.12.1 LTS 版本<br>安装成功后，终端切换到root用户：<br>sudu su<br>查看node/npm版本：node -v / npm-v</p>
-<h2 id="2-安装Hexo博客框架"><a href="#2-安装Hexo博客框架" class="headerlink" title="2.安装Hexo博客框架"></a>2.安装Hexo博客框架</h2><p>借助npm包管理器安装 ，由于国内镜像源速度较慢，利用npm安装cnpm（淘宝镜像源）进行安装：<br>npm install -g cnpm –registry=<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a><br>安装完成后查看cnpm版本：<br>cnpm -v</p>
-<p>通过cnpm安装Hexo：<br>cnpm install -g hexo-cli<br>安装完成后查看Hexo版本：<br>hexo -v</p>
-<h2 id="3-利用hexo搭建博客"><a href="#3-利用hexo搭建博客" class="headerlink" title="3.利用hexo搭建博客"></a>3.利用hexo搭建博客</h2><p>新建一个blog文件夹用于存放搭建blog所需的所有文件（/Users/sd./blog）<br>在终端中cd到blog目录，初始化博客：<br>sudu hexo init<br>初始化后blog目录下生成了初始化的文件，查看：<br>ls -l</p>
-<p>启动博客：<br>hexo s<br>在本地浏览器输入地址进行查看：<br><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a></p>
-<p>新建一篇博文：<br>首先退出hexo服务：Ctrl+C<br>hexo n “My First Post”<br>完成后在/Users/sd./blog/source/_posts/目录下生成一个My-First-Post.md文件<br>cd到该目录下，通过vim对My-First-Post.md文件内容进行修改</p>
-<p>修改完成后，cd回blog目录，对hexo进行清理：<br>hexo clean<br>生成静态文件：<br>hexo g<br>重新启动hexo服务：<br>hexo s</p>
-<h2 id="4-将博客部署到远程站点"><a href="#4-将博客部署到远程站点" class="headerlink" title="4.将博客部署到远程站点"></a>4.将博客部署到远程站点</h2><p>将博客部署到github上公开使用<br>首先断开hexo服务</p>
-<p>登陆github账户，新建一个新的仓库：<br>new repository，仓库名命名为： 用户名+.github.io （aze0056.github.io）</p>
-<p>回到终端，在blog目录下安装git部署的插件：<br>cnpm install –save hexo-deployer-git</p>
-<p>安装完成后，对_config.yml文件进行设置：<br>vim _config.yml<br>文件最底部更改type，并添加两行：<br>type: git<br>repo: <a target="_blank" rel="noopener" href="https://github.com/aze0056/aze0056.github.io.git">https://github.com/aze0056/aze0056.github.io.git</a> （刚才创建的github仓库的网址）<br>branch: master<br>保存退出</p>
-<p>部署到远端：<br>hexo d</p>
-
             
         </div>
     </div>
@@ -242,7 +231,7 @@
         
     </div>
 
-    <a href="/2022/12/28/my-first-post/ " class="go-post">
+    <a href="/2022/12/28/blog-building-note/ " class="go-post">
         阅读全文
     </a>
 </div>
@@ -333,7 +322,7 @@
         <a-affix :offset-top="card_top">
     <a-card class="card-style" style="width: 300px">
         <div class="avatar">
-            <img src="images/snow.jpg " alt="头像">
+            <img src="images/touxiang.png " alt="头像">
         </div>
         <div class="name">
             AZE
@@ -341,7 +330,11 @@
         <div class="descriptions">
             
             <div class="description">
-                我希望自己良善，明察，永远不要仓促经过这人间
+                我希望自己良善、明察
+            </div>
+            
+            <div class="description">
+                永远不要仓促经过这人间
             </div>
             
         </div>
